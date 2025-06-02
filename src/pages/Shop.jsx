@@ -1,8 +1,8 @@
 import Footer from "../components/Footer";
-import CropTop1 from "../images/croptop.jpg"; 
+import CropTop1 from "../images/croptop.jpg";
 import Denim from "../images/denim.jpg";
 import Hoodie from "../images/hoodie.jpg";
-import Vintage2 from "../images/vintage2.jpg";
+
 import Gang from "../images/Gang3.jpg";
 import hoodie2 from "../images/hoodie3.jpg";
 import Airforce from "../images/Black.jpg";
@@ -13,7 +13,7 @@ const products = [
   {
     id: 1,
     name: "Shin HUl crop top",
-    image: CropTop1, 
+    image: CropTop1,
     price: 13960,
   },
   {
@@ -40,35 +40,30 @@ const products = [
     image: Gang,
     price: 19850,
   },
+
   {
     id: 6,
-    name: "Vintage Denim Jacket",   
-    image: Vintage2,
-    price: 22500,
-  },
-  {
-    id: 7,
-    name: "Nike air trainer teal white black",   
+    name: "Nike air trainer teal white black",
     image: Airforce,
     price: 22500,
   },
   {
     id: 8,
-    name: "Nike Air",   
+    name: "Nike Air",
     image: Airforce2,
     price: 22500,
   },
   {
     id: 9,
-    name: "Mickey shorts",   
+    name: "Mickey shorts",
     image: short,
     price: 22500,
-  }
+  },
 ];
 
 const Shop = ({ cart, setCart }) => {
   const addToCart = (product) => {
-    if (!cart.find(item => item.id === product.id)) {
+    if (!cart.find((item) => item.id === product.id)) {
       setCart([...cart, product]);
       alert(`${product.name} added to cart!`);
     } else {
