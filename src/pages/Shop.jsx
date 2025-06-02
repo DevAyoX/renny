@@ -2,7 +2,7 @@ import Footer from "../components/Footer";
 import CropTop1 from "../images/croptop.jpg"; 
 import Denim from "../images/denim.jpg";
 import Hoodie from "../images/hoodie.jpg";
-import Vintage from "../images/vintage2.jpg";
+import Vintage2 from "../images/vintage2.jpg";
 import Gang from "../images/Gang3.jpg";
 import hoodie2 from "../images/hoodie3.jpg";
 import Airforce from "../images/Black.jpg";
@@ -43,7 +43,7 @@ const products = [
   {
     id: 6,
     name: "Vintage Denim Jacket",   
-    image: Vintage,
+    image: Vintage2,
     price: 22500,
   },
   {
